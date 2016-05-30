@@ -1,0 +1,142 @@
+.right {
+    position: absolute;
+    right: 0rem;
+    width: 20rem;
+    font-size:0.8rem;
+    margin-top: 10rem;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.col-map-graph svg {
+    font-size: 0.55rem !important;
+    font-family: 'open_sansregular' !important;
+}
+
+.col-map .selected{
+    stroke: #666;
+    stroke-width: 6;
+}
+
+.col-map-graph .bar:hover rect {
+    fill: brown;
+}
+
+.col-map-graph .bar rect.selected {
+    fill: #666 !important;
+    opacity:1 !important; 
+}
+
+.col-map-graph .value {
+    fill: black;
+}
+
+.col-map-graph .label {
+    text-anchor: end;
+}
+
+.col-map-graph .axis {
+    shape-rendering: crispEdges;
+}
+
+.col-map-graph .axis path {
+    stroke: none;
+}
+
+.col-map-graph .x.axis line {
+    stroke: #fff;
+    stroke-opacity: .8;
+}
+.col-map-graph .x.axis line{
+    stroke: #fff;
+    stroke-opacity: .8;
+    z-index: -10;
+}
+
+.col-map-graph .y.axis path {
+    stroke: black;
+}
+
+.col-map-graph .domain{
+    fill:none
+}
+
+.col-map-graph .highlighted rect {
+    fill: purple;
+}
+
+.col-map-graph .highlighted:hover rect{
+    fill: green;
+}
+
+.menu-inline input[type="radio"] {
+    display:none;
+}
+.menu-inline label{
+    display:inline-block;
+    background-color:#ddd;
+    padding:4px 0px 4px 10px;
+    font-size:0.7rem;
+    width:91%;
+    text-indent: 0px;
+
+}
+.menu-inline input[type="radio"]:checked + label{
+    background-color:#666 !important;
+    color:#fff;
+}
+.bgButtom{
+    width: 100% !important;
+    margin-bottom: 10px;
+    text-indent: -0.5rem;
+    line-height: 1rem !important;
+}
+
+
+.menu-inline img{
+    width:auto;
+    float: left;
+    margin-right: 10px;}
+
+
+.radio-inline{
+    margin-left:25%
+}
+.radio-inline input[type="radio"] {
+    display:none;
+}
+.radio-inline label{
+    display:inline-block;
+    background-color:#ddd;
+    padding:4px 11px;
+    font-family:Arial;
+    font-size:0.8rem;
+}
+.radio-inline input[type="radio"]:checked + label{
+    background-color:#666 !important;
+    color:#fff;
+}
+
+.graph {
+    padding-left: 3rem;
+    width: 40%;
+    float: left;
+}
+.graph-left {
+    padding-left: 3rem;
+    padding-right: 2rem;
+    width: 30%;
+    float: left;
+}
+.graph-right {
+    padding-right: 2rem;
+    width: 30%;
+    float: left;
+}
+
+

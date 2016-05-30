@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8">
+    <title>Map with horizontal bar</title>
+    <meta name="description" content="D3.js map with horizontal bar">
+    <!-- Load required CSSs-->
+    <link rel="stylesheet" type="text/css" href="css/map-n-hbars.css">
+    <!-- Load required Scripts-->
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/localeEsCo.js"></script>
+    <script type="text/javascript" src="js/map-n-hbars.js"></script>
+  </head>
+  <body class="">
+    <div>
+      <div style="padding-left:0 !important; width:18% !important; padding-right: 2rem; float: left;">
+        <div class="menu-inline" id="mhb-menu" style="margin-left:0 !important">
+          <div class="mhbBgButtom bgButtom">
+	    <input id="pop-density-2015" name="mhb-input" value="pop_density_2015" type="radio">
+	    <label for="pop-density-2015">Densidad de la población <br/>(pob/km2)</label>
+	  </div>
+          <div class="mhbBgButtom bgButtom">
+	    <input id="pib-corriente-2014pr" name="mhb-input" value="pib_corriente_2014pr" type="radio">
+	    <label for="pib-corriente-2014pr">PIB Departamental, a precios corrientes - 2014pr <br/>(Miles de millones de pesos)</label>
+	  </div>
+          <div class="mhbBgButtom bgButtom">
+	    <input id="pib-cons-2005-2014pr" name="mhb-input" value="pib_cons_2005_2014pr" type="radio">
+	    <label for="pib-cons-2005-2014pr">PIB Departamental, a precios constantes de 2005 - 2014pr <br/>(Miles de millones de pesos)</label>
+	  </div>
+	  <div class="mhbBgButtom bgButtom">
+	    <input id="expo-2015" name="mhb-input" value="expo_2015" type="radio">
+	    <label for="expo-2015">Exportaciones 2014 <br/>(Valores FOB - Millones de dólares)</label>
+	  </div>
+	  <div class="mhbBgButtom bgButtom">
+	    <input id="impo-2015" name="mhb-input" value="impo_2015" type="radio">
+	    <label for="impo-2015">Importaciones 2014 <br/>(valores CIF - Miles de dólares)</label>
+	  </div>
+          <div class="fuente"><a href="http://www.andi.com.co/SitEco">Fuente: ANDI - Indicadores Económicos</a></div>
+        </div>
+      </div>
+      <div class="graph-left col-map" style="padding-left: 0rem !important;" id="mhb-map"></div>
+      <div>
+        <h4 id="mhb-graph-title"></h4>
+        <div id="mhb-graph" class="col-map-graph" style="padding-right: 2rem;float:left;"></div>
+      </div>
+    </div>
+  </body>
+</html>
